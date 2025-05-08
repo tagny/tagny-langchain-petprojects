@@ -1,0 +1,24 @@
+[project]
+name = "tagny-langchain-petprojects"
+version = "1.0.0"
+description = "Here are some hands-on projects I made while mastering langchain. They are examples of LLMs applications such as RAG and AI Agents. They use locally-deployed LLM and free online API service plans such as Google AI Studio and GitHub Marketplace."
+authors = [
+    {name = "Tagny Ngompe",email = "tagny@ymail.com"}
+]
+license = {text = "Apache License Version 2.0"}
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langchain (==0.3.25)",
+    "openai (==1.77.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "6.29.5"
+jupyterlab = "^4.4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
